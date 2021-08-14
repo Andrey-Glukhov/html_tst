@@ -61,6 +61,7 @@ font-family: 'Rubik', sans-serif;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -444,12 +445,9 @@ background: linear-gradient(0deg, rgba(152,130,80,1) 0%, rgba(232,194,119,1) 100
 	left: 0;
 	width: 165px;
 }
-
-
-
-
 .block-1{
 	padding-top: 20px;
+  margin-top: 30px;
 }
 .block-1 .center-main-block{}
 .subHead{
