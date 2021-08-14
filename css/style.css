@@ -72,6 +72,9 @@ font-family: 'Rubik', sans-serif;
 .timer-box .timer-description{
   padding-right: 10px;
 }
+.timer-count {
+  flex: 0 0 30%;
+}
 .popup-container2{
   position: fixed;
   top: -100%;
