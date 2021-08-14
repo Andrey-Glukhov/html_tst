@@ -480,10 +480,12 @@ function popupImageOpen2(){
 <script>
 	function countdown_callback(is_promotion) {
     if (true == is_promotion) {
-        var timerElement = document.querySelector('.cd_timer');
-		if (timerElement) {
-			timerElement.style.margin = '0 10px!important';
-		}
+		setTimeout( function() {
+			var timerElement = document.querySelector('.cd_timer');
+			if (timerElement) {
+				timerElement.style.margin = '0 10px!important';
+			}
+		},1000);
     } 
 }
 	
