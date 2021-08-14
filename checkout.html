@@ -87,57 +87,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
 <div class="protimer_nopromo"><script>
-$(document).ready(function(){
-	$('#rb2').prop("checked", true)
-    $('input[name=sw]').click(function(){
-      var v = ($(this).val());
-      console.log(v);
-      if($("#rb1").is(':checked')) {
-          $('.order-plus1').html('Добавить к заказу +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт ');
-          $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181628');
-          $('.order-plus1').removeClass('org');
-      }
-      if($("#rb2").is(':checked')) {
-          $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Второй расчет');
-          $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=173205');
-          $('.order-plus1').removeClass('org');
-      }
-      if($("#rb3").is(':checked')) {
-          $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих');
-          $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=174490');
-          $('.order-plus1').removeClass('org');
-      }
-      if($("#rb1").is(':checked') && $("#rb2").is(':checked')) {
-    	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Второй расчет +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт');
-    	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181638');
-    	  $('.order-plus1').removeClass('org');
-      }
-      if($("#rb2").is(':checked') && $("#rb3").is(':checked')) {
-    	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих +<br> Персональные направления - талисманы на 2021 год. Второй расчет');
-    	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=174505');
-    	  $('.order-plus1').removeClass('org');
-      }
-      if($("#rb1").is(':checked') && $("#rb3").is(':checked')) {
-    	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт');
-    	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181646');
-    	  $('.order-plus1').removeClass('org');
-      }
-      if($("#rb1").is(':checked') && $("#rb2").is(':checked') && $("#rb3").is(':checked')) {
-    	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих +<br> Персональные направления - талисманы на 2021 год. Второй расчет +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт');
-    	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181651');
-    	  $('.order-plus1').addClass('org');
-      }
-    })
-})
+// $(document).ready(function(){
+// 	$('#rb2').prop("checked", true)
+//     $('input[name=sw]').click(function(){
+//       var v = ($(this).val());
+//       console.log(v);
+//       if($("#rb1").is(':checked')) {
+//           $('.order-plus1').html('Добавить к заказу +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт ');
+//           $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181628');
+//           $('.order-plus1').removeClass('org');
+//       }
+//       if($("#rb2").is(':checked')) {
+//           $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Второй расчет');
+//           $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=173205');
+//           $('.order-plus1').removeClass('org');
+//       }
+//       if($("#rb3").is(':checked')) {
+//           $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих');
+//           $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=174490');
+//           $('.order-plus1').removeClass('org');
+//       }
+//       if($("#rb1").is(':checked') && $("#rb2").is(':checked')) {
+//     	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Второй расчет +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт');
+//     	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181638');
+//     	  $('.order-plus1').removeClass('org');
+//       }
+//       if($("#rb2").is(':checked') && $("#rb3").is(':checked')) {
+//     	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих +<br> Персональные направления - талисманы на 2021 год. Второй расчет');
+//     	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=174505');
+//     	  $('.order-plus1').removeClass('org');
+//       }
+//       if($("#rb1").is(':checked') && $("#rb3").is(':checked')) {
+//     	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт');
+//     	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181646');
+//     	  $('.order-plus1').removeClass('org');
+//       }
+//       if($("#rb1").is(':checked') && $("#rb2").is(':checked') && $("#rb3").is(':checked')) {
+//     	  $('.order-plus1').html('Добавить к заказу +<br> Персональные направления - талисманы на 2021 год. Расчет талисманов для двоих +<br> Персональные направления - талисманы на 2021 год. Второй расчет +<br> Проект «Взрывное Улучшение Удачи» на 12 мес. Пакет Стандарт');
+//     	  $('.order-plus1').attr('href', 'https://vladimirzakharov.com/checkout/?add-to-cart=181651');
+//     	  $('.order-plus1').addClass('org');
+//       }
+//     })
+// })
 </script>
+</div>
+
 	<main>
 		<section class="block block-buy">
 		
 			<div class="center-main-block">
-				
-				<h2>Вы получаете онлайн-семинар <br>
-«Ци Мэнь для ДОБРО получения» всего за
-<br><span class="color2">$<span class="price-usd">97</span> (~<span class="price-rur">1536</span> RUR; <span class="price-uah">534</span> UAH)</span></h2>
+				<div class="protimer_promo">
+					<h2>Вы получаете онлайн-семинар <br>
+					«Ци Мэнь для ДОБРО получения» всего за
+					<br><span class="color2">$<span class="price-usd">97</span> (~<span class="price-rur">1536</span> RUR; <span class="price-uah">534</span> UAH)</span></h2>
+				</div>
+				<div class="protimer_nopromo">
+					<h2>Вы получаете онлайн-семинар <br>
+					«Ци Мэнь для ДОБРО получения» всего за
+					<br><span class="color2">$<span class="price-usd">128</span> (~<span class="price-rur">1536</span> RUR; <span class="price-uah">534</span> UAH)</span></h2>
+				</div>
 				<p><i>О том, как выбрать дату для подачи прошений и документов, чтобы получить заветную печать и подпись или устное одобрение.</i></p>
 				
 				<div class="special-block">
@@ -185,15 +193,16 @@ $(document).ready(function(){
 			<p style="margin-top: 20px;">© <script type="text/javascript"> document.write(new Date().getFullYear()); </script> Feng Shui Crazy Journey. Владимир Захаров. Все права защищены. </p>
 		</div>
 	</footer>
-
+	<div class="protimer_promo">
 	<div class="timer-container">
 		<div class="timer-box">
 			<div class="timer-description">До повышения цены осталось:</div>
 			<div>Загрузка таймера</div>
 		</div>
 	</div>
+	</div>
 
-</div>
+
 <!-- Код тега ремаркетинга Google -->
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -221,18 +230,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 	function countdown_callback(is_promotion) {
 		if (true != is_promotion) {
-			var priceElement = document.querySelector('.price-usd');
-			priceElement.innerHTML = '128';
 			var titleElement = document.querySelector('title');
-			orderElement.innerHTML = 'Вы получаете онлайн-семинар «Ци Мэнь для ДОБРО получения» всего за $128';
-			var metaElement = document.querySelector('meta[property="og:title"]');
-			metaElement.setAttribute('content', 'Вы получаете онлайн-семинар «Ци Мэнь для ДОБРО получения» всего за $128'); 
-			var timerElement = document.querySelector('.timer-container');
-			timerElement.style.display = 'none';
+			titleElement.innerHTML = 'Вы получаете онлайн-семинар «Ци Мэнь для ДОБРО получения» всего за $128';
+			var metaElement = document.querySelector('meta[property="og:title]');
+			metaElement.setAttribute('content', 'Вы получаете онлайн-семинар «Ци Мэнь для ДОБРО получения» всего за $128')
 		} 
 	}
-</script>
-
+	</script>
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
 (function(){ var widget_id = 'PmENDXYsHw';var d=document;var w=window;function l(){
